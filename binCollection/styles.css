@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #eb3636;
+}
+
+.calendar {
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.month {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 1000px; 
+}
+
+.month-name {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.weekdays, .days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weekdays div, .days div {
+    width: calc(100% / 7);
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.weekdays div {
+    font-weight: bold;
+    background: #ddd;
+}
+
+.days div {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.days div.brown-black {
+    background: linear-gradient(to bottom, #9e5940 50%, #000000 50%);
+    color: rgb(255, 255, 255);
+}
+
+.days div.green {
+    background-color: #14bb1a;
+    color: white;
+  
+}
+
+.days div .day-number {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.days div .bin-info {
+    font-size: 15px;
+}
